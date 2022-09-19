@@ -4,116 +4,191 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https: //fonts.googleapis.com/css2? family= Kanit:wght@300 & display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <title>FAG Diversas</title>
+    <link rel="stylesheet" href="./css/pontas.css">
+    <title>FAQ Diversas</title>
 </head>
 
 <body class="bg-light ">
     <!-------------------------------------------------------BARRA DE NAVEGAÇAO---------------------------------------->
-    <header class=" bg-primary  mb-5 " style=" background-image:url(./css/imagens/crianças.png);background-size:cover;">
-            <div class="container-fluid ">
-                <div class=" d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                    <div class=" d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start ">
-                        <a href="./index.html"><img src="./css/imagens/diversaslogo.png"
-                                class=" d-flex align-items-center m-3 mb-lg-0 " width="180" height="180"
-                                alt="logo-diversas">
-                            </img>
-                        </a>
+     <header class=" bg-primary  mb-5 " style=" background-image:url(./css/imagens/sdpintando.jpg);background-size:cover;">
+         <nav id="navbar-flut" class="navbar navbar-expand-lg navbar-light rounded">
+    <img class="logo img-fluid md-3" src="./css/imagens/diversaslogoretangulo.png" alt="logo-diversas">
 
-                        <ul class="  nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                            <li>
-                                <a href="./index.html" class=" h1 nav-link px-2 text-dark">
-                                    <p style="vertical-align: inherit;">
-                                        <p class="h5 text-white" style="vertical-align: inherit;">Home/</p>
-                                    </p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="./parceiria.html" class=" h1 nav-link px-2 text-dark">
-                                    <p style="vertical-align: inherit;">
-                                        <p class="h5 text-white" style="vertical-align: inherit;">Parceiros/</p>
-                                    </p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="./faq.html" class="nav-link px-2 text-dark">
-                                    <p style="vertical-align: inherit;">
-                                        <p class="h5 text-white" style="vertical-align: inherit;">FAQ/</p>
-                                    </p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="./quemsomos.html" class="nav-link px-2 text-dark">
-                                    <p style="vertical-align: inherit;">
-                                        <p class="h5 text-white" style="vertical-align: inherit;">Quem Somos</p>
-                                    </p>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <hr>
-                    <div class="btn  ">
-                        <a href="./entrar.html" class="nav-link px-2 text-dark" type="imput" tabindex="Entrar/cadastrar">
-                            <button type="input" class="btn btn-info">Entrar/cadastrar</button>
-                        </a>
-                    </div>
-                </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        </header>
-        <!--fim do cabeçalho-->
-    <!--inicio do FAQ-->
-    <main>
-        <div class="container d-flex row" style="margin-left:10%; display:flex;">
-            <div class="col-6  text-center">
-                <div style=" align-items: center; ">
-
-                    <h1 style="color:#1633cf; font-size:45px;">FAQ</h1>
-                    <p>Perguntas frequentes</p> <br>
-                    <div>
-                        <img style="width:6%;" src="/css/imagens/celular_logo.png" alt="telefone logo">
-                        <P>Telefone <br>(12) 3456–7890 </p>
-                    </div>
-                    <div>
-                        <img style="width:6%;" src="/css/imagens/email_logo.png" alt="telefone logo">
-                        <P>Endereço de e-mail <br> contato@diversas.com.br</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6">
-                <img class="img-fluid mt-5" style="width:350px; border-radius:10px; border: #1633cf solid;"
-                    src="./css/imagens/sdpintando.jpg" alt="Propaganda">
-            </div>
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1"></label>
-                    <textarea class="form-control mb-2"  style="width:42%; margin-left:5%;"  id="exampleFormControlTextarea1" name="story" rows="5" cols="33" placeholder="Envie sua mensagem"></textarea>
-                    <button style="margin-left:22%;" type="submit" class="btn btn-info">Enviar</button>
-                </div>
-          </div> 
-        </div>
+    <div class="collapse navbar-collapse justify-content-md-center " id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active  ">
+          <a class="nav-link  text-white" href="./index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  text-white" href="#quemsomos">Quem Somos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  text-white  " href="./diversasformasdeaprender.html">Diversas Formas De Aprender </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link p text-white  " href="./doacoes.html">DOAÇÕES</a>
        
+        </li>      
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white " href="#" data-toggle="dropdown" aria-expanded="false">MENU</a>
+          <div class=" menu dropdown-menu ">
+            <a class="dropdown-item " href="./faq.html">FAQ</a>
+            <a class="dropdown-item" href="#footer">Contatos</a>
+             <a class="dropdown-item" href="./parceiros.html">Parceiros</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+        <main>
+               <div class="container-fluid ">
+            <div class=" d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <div class=" d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start ">
+                    <a href="./index.html">
+                        <img src="./css/imagens/diversaslogo.png" class=" d-flex align-items-center m-3 mb-lg-0 "
+                            width="180" height="180" alt="logo-diversas">
+                        </img>
+                    </a>
+
+                    <h1 class="display-3 text-white">FAQ</h1>
+                   
+
+                </div>
+
+
+                <div class="btn ">
+                    <a href="./login.html" class="nav-link px-2 text-dark" type="imput" tabindex="Entrar/cadastrar">
+                        <button type="input" class="btn btn-info">Entrar/cadastrar</button>
+                    </a>
+                </div>
+            </div>
+    </header>
+    <!------------------------------------------------------inicio do FAQ------------------------------------------------>
+    <main>
+        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-info">
+            <div class="mx-auto my-3">
+                <h1 class="display-5 font-weight-normal">Perguntas Frequentes <br> DIVERSAS</h1>
+                <p class="lead font-weight-normal">Neste canal você pode tirar suas dúvidas e colaborar por meio de
+                    sugestões ou críticas.</p>
+            </div>
+
         </div>
+        <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5  overflow-hidden ">
+            <ul class="list-group list-group-flush h5 text-dark">
+
+                <li class="list-group-item dopdo">O que é educação inclusiva ?</li>
+                <li class="list-group-item">Como despertar o interesse dos professores por práticas inclusivas?</li>
+                <li class="list-group-item">Quais cursos devo fazer para atender crianças com deficiência intelectual?
+                </li>
+                <li class="list-group-item">Como posso ensinar química a estudante com Síndrome de Down</li>
+                <li class="list-group-item">Como prevenir o possível isolamento de um aluno acompanhado por profissional
+                    de apoio?</li>
+                <li class="list-group-item">Por que é fundamental a alfabetização para alunos com deficiência visual na
+                    escola?</li>
+                <li class="list-group-item">Como despertar o interesse de um estudante com autismo pelas atividades?
+                </li>
+
+            </ul>
+        </div>
+        <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden ">
+            <div class="my-3 p-3">
+                <p class="h3 text-info">Deixe sua sugestão!</p>
+            </div>
+            <div class="bg-primary shadow-sm mx-auto" style="width: 100%; border-radius: 21px 21px 0 0;">
+                <div class="container d-flex row-wrap">
+                    <div class="col-6  text-center m-5 text-white">
+
+                        <label for="cep" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="Nome" placeholder="Digite seu nome" required>
+                        <div class="invalid-feedback">
+                            Informe o Nome.
+                        </div>
+                        <label for="cep" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="email" placeholder="Digite seu e-mail" required>
+                        <div class="invalid-feedback">
+                            Informe o seu Email
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Dicas e Sugestões</label>
+                            <textarea class="form-control mb-2" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Envie sua mensagem \o/"></textarea>
+                            <button type="submit" class="btn btn-info">Enviar</button>
+                        </div>
+                    </div>
+                    <div class="">
+                        <img class="img-fluid" style="width:300px; border-radius:50px;"
+                            src="./css/imagens/cadeirante.png" alt="Propaganda">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
     </main>
-    <!--inicio do FAQ-->
-    <footer>
-        <div class="container-fuid mt-5 bg-info"
-            style="display: flex; padding-top:5px; justify-content: space-around; ">
-            <hr>
-            <p class="text-dark"> Direitos autorais Diversas © 2022 Todos os direitos reservados.</p>
-            <div>
-                <a href="http:https://www.facebook.com/"><img style="height:25px ;" src="./css/imagens/faceicon.png"
-                        alt="Icon facebook "></a>
-                <a href="https://www.instagram.com/"><img style="height:25px ;" src="./css/imagens/instaicon.png"
-                        alt="Icon Instagram "></a>
-                <a href="https://twitter.com/"><img style="height:25px ;" src="./css/imagens/twitte-icon-1.jpg"
-                        alt="Icon twitter "></a>
+    <!-----INICIO DO RODAPÉ-->
+
+  <!------------------------------------------------------RODAPÉ------------------------------------------------------>
+    <footer id="footer" class="container-fluid py-5 ">
+        <div class="row">
+            <div class="col-12 col-md-3">
+                <img class="logo ml-3" src="./css/imagens/diversaslogoretangulo.png" alt="logo-diversas">
+                <small class="d-block ml-3 text-dark ">&copy; SQUAD-54 <br> Recode Pro 2022</small>
+            </div>
+             <div class="col-6 col-md">
+                <h5>CONTATOS</h5>
+                <ul class="list-unstyled text-small">
+                    <li>
+                        <P class="text-white">(12) 3456–7890</P>
+                    </li>
+                    <li>
+                        <P class="text-white">contato@diversas.com.br</P>
+                    </li>
+                    <li>
+                        <p class="text-white">www.diversas.com.br</p>
+                    </li>
+                </ul>
+            </div>
+             <div class="col-6 col-md">
+                <h5>Leis PCD'S</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-white"
+                            href="https://iparadigma.org.br/bibliotecavirtual/?gclid=CjwKCAjw4JWZBhApEiwAtJUN0LqpoKHDthhYnpgEyrw3bp6YZBhUgc3x84AsdnCMi0LFfymQVGXRkxoCxWEQAvD_BwE">Leis
+                            sobre inclusão - Conheça o Instituto Paradigma</a></li>
+                    <li><a class="text-white"
+                            href="https://observatoriodeeducacao.institutounibanco.org.br/em-debate/conteudo-multimidia/detalhe/educacao-inclusiva-um-direito-inegociavel?gclid=CjwKCAjw4JWZBhApEiwAtJUN0NZo1R0Jb0KTlxwj6Jd9MOh98dlFAvEfV2C-izHuKLwKhrkRwZA-jBoC6bsQAvD_BwE">Observatório
+                            de Educação - Educação Inclusiva: Desafios</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <a class="py-2 " aria-label="Product">
+
+                    <a href="http:https://www.facebook.com/"><img style="height:40px ;" src="./css/imagens/faceicon.png"
+                            alt="Icon facebook "></a>
+                    <a href="https://www.instagram.com/"><img style="height:50px ;" src="./css/imagens/instaicon.png"
+                            alt="Icon Instagram "></a>
+                    <a href="https://twitter.com/"><img style="height:40px ;" src="./css/imagens/twitte-icon-1.jpg"
+                            alt="Icon twitter "></a>
+                </a>
             </div>
         </div>
     </footer>
+
     <!------------------------------------------------------------FIM RODAPÉ--------------------------------------------------------------->
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
