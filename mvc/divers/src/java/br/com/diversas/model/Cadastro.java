@@ -7,8 +7,12 @@ public class Cadastro {
     private int id_cadastro;
     private String nome;
     private String email;
-    private int senha;
+    private String senha;
     private String cpf;
+    
+    public Cadastro() {
+    	
+    }
 
     public int getId_cadastro() {
         return id_cadastro;
@@ -34,11 +38,11 @@ public class Cadastro {
         this.email = email;
     }
 
-    public int getSenha() {
+    public String getSenha() {
         return senha;
     }
 
-    public void setSenha(int senha) {
+    public void setSenha(String senha) {
         this.senha = senha;
     }
 

@@ -27,7 +27,7 @@ public class CadastroDAO {
 
 			pstm.setString(1, cadastro.getNome());
 			pstm.setString(2, cadastro.getEmail());
-			pstm.setInt(3, cadastro.getSenha());
+			pstm.setString(3, cadastro.getSenha());
 			pstm.setString(4, cadastro.getCpf());
 
 			pstm.execute();
@@ -59,7 +59,7 @@ public class CadastroDAO {
 
 	// Aqui é onde funciona o SELECT ficara como getSugestao para fazer consulta de
 	// dados
-	public List<Cadastro> getCadastro() {
+	public String getCadastro() {
 
 		String sql = "SELECT * FROM cadastro";
 
@@ -71,6 +71,7 @@ public class CadastroDAO {
 
 		ResultSet rset = null;
 
+		String string = "";
 		try {
 			conn = ConnectionFactory.createConnectionToMySQl();
 
@@ -87,10 +88,12 @@ public class CadastroDAO {
 				// Recuperar email
 				cadastroslct.setEmail(rset.getString("email"));
 				// Recuperar senha
-				cadastroslct.setSenha(rset.getInt("senha"));
+				cadastroslct.setSenha(rset.getString("senha"));
 				// Recuperar cpf
 				cadastroslct.setCpf(rset.getString("cpf"));
 
+				string = string + "Nome: " + rset.getString("nome") + " - CPF: " + rset.getString("cpf") + " - Email: "
+						+ rset.getString("email") + "\n";
 				cadastro.add(cadastroslct);
 			}
 		} catch (Exception e) {
@@ -113,14 +116,14 @@ public class CadastroDAO {
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
-			return cadastro;
 
 		}
+		return string;
 
 	}
 
 	// Aqui é onde funciona o UPDATE para atualizar os dados
-	public void update(Cadastro cadastro) throws SQLException {
+	public void update(int id, Cadastro cadastro ) throws SQLException {
 		String sql = "UPDATE cadastro SET  nome= ?,email= ?,senha= ?,cpf= ?" + "WHERE id_cadastro= ?";
 
 		Connection conn = null;
@@ -134,9 +137,9 @@ public class CadastroDAO {
 
 			pstm.setString(1, cadastro.getNome());
 			pstm.setString(2, cadastro.getEmail());
-			pstm.setInt(3, cadastro.getSenha());
+			pstm.setString(3, cadastro.getSenha());
 			pstm.setString(4, cadastro.getCpf());
-			pstm.setInt(5, cadastro.getId_cadastro());
+			pstm.setInt(5, id);
 
 			pstm.execute();
 
