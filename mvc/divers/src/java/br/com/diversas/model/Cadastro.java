@@ -1,5 +1,5 @@
 
-package diversas;
+package br.com.diversas.model;
 
 
 public class Cadastro {

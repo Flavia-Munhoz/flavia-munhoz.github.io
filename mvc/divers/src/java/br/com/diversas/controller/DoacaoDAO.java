@@ -1,5 +1,5 @@
 
-package br.com.diversasDAO;
+package br.com.diversas.controller;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -8,8 +8,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import br.com.diversas.model.Doacao;
 import br.com.diversasFactory.ConnectionFactory;
-import diversas.Doacao;
 
 public class DoacaoDAO {
 

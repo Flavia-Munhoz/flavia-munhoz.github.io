@@ -1,14 +1,15 @@
 
-package br.com.diversasDAO;
+package br.com.diversas.controller;
 
-import br.com.diversasFactory.ConnectionFactory;
-import diversas.Cadastro;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+
+import br.com.diversas.model.Cadastro;
+import br.com.diversasFactory.ConnectionFactory;
 
 public class CadastroDAO {
 

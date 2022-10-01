@@ -2,11 +2,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package diversas;
+package br.com.diversas.view;
 
-import br.com.diversasDAO.CadastroDAO;
-import br.com.diversasDAO.SugestaoDAO;
 import java.sql.SQLException;
+
+import br.com.diversas.controller.SugestaoDAO;
+import br.com.diversas.model.Sugestao;
 
 public class testee {
     
