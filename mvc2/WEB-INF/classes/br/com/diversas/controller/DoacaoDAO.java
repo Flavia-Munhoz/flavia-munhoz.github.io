@@ -69,6 +69,7 @@ public class DoacaoDAO {
 		PreparedStatement pstm = null;
 
 		ResultSet rset = null;
+		String string = "";
 
 		try {
 			conn = ConnectionFactory.createConnectionToMySQl();
@@ -89,8 +90,10 @@ public class DoacaoDAO {
 				doacaoslct.setEmail(rset.getString("email"));
 				// Recuperar mensagem
 				doacaoslct.setMensagem(rset.getString("mensagem"));
-
+				string = string + "Tipo_doacao: " + rset.getString("tipo_doacao") + " - Nome: " + rset.getString("nome") + " - Email: "
+						+ rset.getString("email") +  "Mensagem:   " + rset.getString("mensagem")+ "\n";
 				doacao.add(doacaoslct);
+				
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -112,13 +115,13 @@ public class DoacaoDAO {
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
-			return doacao;
-
 		}
+		return doacao;
+		
 	}
 
 	// Aqui é onde funciona o UPDATE para atualizar os dados
-	public void updateS(Doacao doacao) throws SQLException {
+	public void updateS(int id,  Doacao doacao) throws SQLException {
 		String sql = "UPDATE doacao SET    tipo_doacao= ?,  nome= ?,  email= ?,  mensagem= ?" + "WHERE id_doacao= ?";
 
 		Connection conn = null;
@@ -138,7 +141,7 @@ public class DoacaoDAO {
 			pstm.setString(2, doacao.getNome());
 			pstm.setString(3, doacao.getEmail());
 			pstm.setString(4, doacao.getMensagem());
-			pstm.setInt(5, doacao.getId_doacao());
+			pstm.setInt(5, id);
 
 			pstm.execute();
 		} catch (Exception e) {
