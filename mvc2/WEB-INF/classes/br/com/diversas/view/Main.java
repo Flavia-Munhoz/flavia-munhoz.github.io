@@ -23,7 +23,7 @@ public class Main {
 		String escolha = "";
 
 		while (!opcao.equalsIgnoreCase("0")) {
-			String texto = "Diversas  \n" + "Seja Bem Vindo\n" + "Digite sua opcão: \n" + "1 -  Usuario\n"
+			String texto = "Menu Diversas  \n" + "Seja Bem Vindo\n" + "Digite sua opcão: \n" + "1 -  Usuario\n"
 					+ "2 - Doação  \n" + "3 - Sugestão\n" + "0 - Sair";
 			opcao = JOptionPane.showInputDialog(texto);
 
