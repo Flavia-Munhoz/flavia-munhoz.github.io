@@ -23,3 +23,48 @@
     border-radius: 2%;
     
 }
+footer {
+    background-color: rgb(4, 127, 175);
+    margin-top: 10%;
+
+}
+
+#navbar-flut{
+background-color: rgb(68, 94, 212)
+}
+.logo{
+    height: 30px;
+    width: 80px;
+}
+.sing{
+    background-color: rgb(105, 135, 233);
+
+
+}
+
+.menu{
+background-color: rgb(68, 94, 212);
+font-style: normal;
+}
+.menu a{
+    color: aliceblue;
+
+}
+
+.doar{
+    background-color:rgb(116, 142, 246) ;
+}
+ .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }

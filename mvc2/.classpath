@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="WEB-INF/classes"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/javax.servlet-api-4.0-FINAL-javadoc.jar"/>
+	<classpathentry kind="output" path="WEB-INF/classes"/>
+</classpath>
