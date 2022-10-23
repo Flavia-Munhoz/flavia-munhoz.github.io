@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -33,7 +34,7 @@ public class DiversasControllerCadastro {
 	final CadastroService cadastroService;
 	
 	public DiversasControllerCadastro(CadastroService cadastroService ) {
-		this.cadastroService = new CadastroService();
+	this.cadastroService = cadastroService;
 	}
 	
 	@PostMapping
@@ -76,6 +77,23 @@ public class DiversasControllerCadastro {
 		 cadastroService.delete(diversasCadastroModelOptional.get());
 		 return ResponseEntity.status(HttpStatus.OK).body("Deletado com sucesso!");
 	}
+	
+	@PutMapping
+	public ResponseEntity<Object>updateCadastro(@PathVariable(value = "id")UUID id, @RequestBody @Valid DiversasDtoCadastro diversasDtoCadastro){
+		Optional<DiversasCadastroModel> diversasCadastroModelOptional = cadastroService.findById(id);
+		if(!diversasCadastroModelOptional.isPresent()){
+			return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Não encontrado!");
+		}
+		var diversasCadastroModel = diversasCadastroModelOptional.get();
+		
+		diversasCadastroModel.setNome(diversasDtoCadastro.getNome());
+		diversasCadastroModel.setEmail(diversasDtoCadastro.getEmail());
+		diversasCadastroModel.setSenha(diversasDtoCadastro.getSenha());
+		diversasCadastroModel.setCpf(diversasDtoCadastro.getCpf());
+		
+		return ResponseEntity.status(HttpStatus.OK).body(diversasCadastroModel);
+	}
+	
 
 
 }
