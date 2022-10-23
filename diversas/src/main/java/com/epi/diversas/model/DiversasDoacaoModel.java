@@ -1,6 +1,7 @@
 package com.epi.diversas.model;
 
 import java.io.Serializable;
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 import javax.persistence.Column;
@@ -32,10 +33,21 @@ public class DiversasDoacaoModel implements Serializable {
 	
 	@Column(nullable = false, unique = true, length = 170) 
 	private String mensagem;
+	
+	@Column(nullable = false)
+    private LocalDateTime registrationDate;
 
 	
 	
 	
+	public LocalDateTime getRegistrationDate() {
+		return registrationDate;
+	}
+
+	public void setRegistrationDate(LocalDateTime registrationDate) {
+		this.registrationDate = registrationDate;
+	}
+
 	public UUID getIdDoa() {
 		return idDoa;
 	}
