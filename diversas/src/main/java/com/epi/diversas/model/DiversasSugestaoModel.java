@@ -1,6 +1,7 @@
 package com.epi.diversas.model;
 
 import java.io.Serializable;
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 import javax.persistence.Column;
@@ -28,6 +29,19 @@ public class DiversasSugestaoModel implements Serializable  {
     
     @Column(nullable = false, unique = true, length = 200)
     private String sugestao;
+    
+    @Column(nullable = false)
+    private LocalDateTime registrationDate;
+    
+    
+
+	public LocalDateTime getRegistrationDate() {
+		return registrationDate;
+	}
+
+	public void setRegistrationDate(LocalDateTime registrationDate) {
+		this.registrationDate = registrationDate;
+	}
 
 	public UUID getIdSugest() {
 		return idSugest;
