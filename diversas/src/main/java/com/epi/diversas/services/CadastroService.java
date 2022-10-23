@@ -16,7 +16,7 @@ public class CadastroService {
 	
 	private DiversasRepositoryCadastro diversasRepositoryCadastro;
 	
-	public void CadastroService(DiversasRepositoryCadastro  diversasRepositoryCadastro){
+	public CadastroService(DiversasRepositoryCadastro  diversasRepositoryCadastro){
 		this.diversasRepositoryCadastro = diversasRepositoryCadastro;		
 	}
 
