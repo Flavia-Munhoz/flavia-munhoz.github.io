@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+	integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+	crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link
+	href="https: //fonts.googleapis.com/css2? family= Kanit:wght@300 & display=swap"
+	rel="stylesheet">
+<link rel="stylesheet" th:href="@{/css/style.css}">
+<title>FAQ Diversas</title>
+</head>
+
+<body class="bg-light ">
+	<!-------------------------------------------------------BARRA DE NAVEGAÇAO---------------------------------------->
+	<header class=" bg-primary  mb-5 "
+		th:style="' background: url(/css/imagens/sdpintando.jpg);background-size:cover;'">
+		<nav id="navbar-flut"
+			class="navbar navbar-expand-lg navbar-light rounded">
+			<img class="logo img-fluid md-3"
+				th:src="@{/css/imagens/diversaslogoretangulo.png}"
+				alt="logo-diversas">
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarNav" aria-controls="navbarNav"
+				aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse justify-content-md-center "
+				id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item active  "><a class="nav-link  text-white"
+						href="http://localhost:9090/home">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item"><a class="nav-link  text-white"
+						href="#quemsomos">Quem Somos</a></li>
+					<li class="nav-item"><a class="nav-link  text-white  "
+						href="http://localhost:9090/home/diversasformasdeaprender">Diversas
+							Formas De Aprender </a></li>
+					<li class="nav-item"><a class="nav-link p text-white  "
+						href="http://localhost:9090/sistema/doacao/novo">DOAÇÕES</a></li>
+					<li class="nav-item dropdown"><a
+						class="nav-link dropdown-toggle text-white " href="#"
+						data-toggle="dropdown" aria-expanded="false">MENU</a>
+						<div class=" menu dropdown-menu ">
+							<a class="dropdown-item "
+								href="http://localhost:9090/sistema/sugestao/novo">FAQ</a> <a
+								class="dropdown-item" href="#footer">Contatos</a> <a
+								class="dropdown-item"
+								href="http://localhost:9090/home/parceiros">Parceiros</a>
+						</div></li>
+				</ul>
+			</div>
+			<div vw class="enabled">
+				<div vw-access-button class="active"></div>
+				<div vw-plugin-wrapper>
+					<div class="vw-plugin-top-wrapper"></div>
+				</div>
+			</div>
+		</nav>
+		<main>
+
+			     <div class="container-fluid ">
+				<div
+					class=" d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+					<div
+						class=" d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start ">
+						<a href="http://localhost:9090/home"> <img
+							th:src="@{/css/imagens/diversaslogo.png}"
+							class=" d-flex align-items-center m-3 mb-lg-0 " width="180"
+							height="180" alt="logo-diversas"> </img>
+						</a>
+
+						<h1 class="display-3 text-white">FAQ</h1>
+
+
+					</div>
+
+
+					<div class="btn ">
+						<a href="http://localhost:9090/home/login"
+							class="nav-link px-2 text-dark" type="imput"
+							tabindex="Entrar/cadastrar">
+							<button type="input" class="btn btn-info">Entrar/cadastrar</button>
+						</a>
+					</div>
+				</div>
+	</header>
+	<!------------------------------------------------------inicio do FAQ------------------------------------------------>
+	<main>
+		<div
+			class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-info">
+			<div class="mx-auto my-3">
+				<h1 class="display-5 font-weight-normal">
+					Perguntas Frequentes <br> DIVERSAS
+				</h1>
+				<p class="lead font-weight-normal">Neste canal você pode tirar
+					suas dúvidas e colaborar por meio de sugestões ou críticas.</p>
+			</div>
+
+		</div>
+		<div
+			class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5  overflow-hidden ">
+			<ul class="list-group list-group-flush h5 text-dark">
+
+				<li class="list-group-item dopdo">O que é educação inclusiva ?</li>
+				<li class="list-group-item">Como despertar o interesse dos
+					professores por práticas inclusivas?</li>
+				<li class="list-group-item">Quais cursos devo fazer para
+					atender crianças com deficiência intelectual?</li>
+				<li class="list-group-item">Como posso ensinar química a
+					estudante com Síndrome de Down</li>
+				<li class="list-group-item">Como prevenir o possível isolamento
+					de um aluno acompanhado por profissional de apoio?</li>
+				<li class="list-group-item">Por que é fundamental a
+					alfabetização para alunos com deficiência visual na escola?</li>
+				<li class="list-group-item">Como despertar o interesse de um
+					estudante com autismo pelas atividades?</li>
+
+			</ul>
+		</div>
+		<div
+			class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden ">
+			<div class="my-3 p-3">
+				<p class="h3 text-info">Deixe sua sugestão!</p>
+			</div>
+			<div class="bg-primary shadow-sm mx-auto"
+				style="width: 100%; border-radius: 21px 21px 0 0;">
+				<div class="container d-flex row-wrap">
+					<div class="col-6  text-center m-5 text-white">
+						<form class="form-signin " th:action="@{/sistema/sugestao/salvar}"
+							method="POST" th:object="${registroAtualSugestao}">
+							<label for="cep" class="form-label">Nome</label> <input
+								type="text" th:field="*{nome}" class="form-control"  
+								placeholder="Digite seu nome" required>
+							<div class="invalid-feedback">Informe o Nome.</div>
+							<label for="cep" class="form-label">Email</label> <input
+								type="text" th:field="*{email}" class="form-control" id="email"
+								placeholder="Digite seu e-mail" required>
+							<div class="invalid-feedback">Informe o seu Email</div>
+							<div class="form-group">
+								<label for="exampleFormControlTextarea1">Dicas e
+									Sugestões</label>
+								<textarea class="form-control mb-2" 
+									id="exampleFormControlTextarea1" th:field="*{sugestao}" rows="3"
+									placeholder="Envie sua mensagem \o/"></textarea>
+								<button type="submit" class="btn btn-info">Enviar</button>
+							</div>
+						</form>
+					</div>
+					<div class="">
+						<img class="img-fluid" style="width: 300px; border-radius: 50px;"
+							th:src="@{/css/imagens/cadeirante.png}" alt="Propaganda">
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</main>
+	<!-----INICIO DO RODAPÉ-->
+
+	<!------------------------------------------------------RODAPÉ------------------------------------------------------>
+	<footer id="footer" class="container-fluid py-5 ">
+		<div class="row">
+			<div class="col-12 col-md-3">
+				<img class="logo ml-3"
+					th:src="@{/css/imagens/diversaslogoretangulo.png}"
+					alt="logo-diversas"> <small class="d-block ml-3 text-dark ">&copy;
+					SQUAD-54 <br> Recode Pro 2022
+				</small>
+			</div>
+			<div class="col-6 col-md">
+				<h5>CONTATOS</h5>
+				<ul class="list-unstyled text-small">
+					<li>
+						<P class="text-white">(12) 3456–7890</P>
+					</li>
+					<li>
+						<P class="text-white">contato@diversas.com.br</P>
+					</li>
+					<li>
+						<p class="text-white">www.diversas.com.br</p>
+					</li>
+				</ul>
+			</div>
+			<div class="col-6 col-md">
+				<h5>Leis PCD'S</h5>
+				<ul class="list-unstyled text-small">
+					<li><a class="text-white"
+						href="https://iparadigma.org.br/bibliotecavirtual/?gclid=CjwKCAjw4JWZBhApEiwAtJUN0LqpoKHDthhYnpgEyrw3bp6YZBhUgc3x84AsdnCMi0LFfymQVGXRkxoCxWEQAvD_BwE">Leis
+							sobre inclusão - Conheça o Instituto Paradigma</a></li>
+					<li><a class="text-white"
+						href="https://observatoriodeeducacao.institutounibanco.org.br/em-debate/conteudo-multimidia/detalhe/educacao-inclusiva-um-direito-inegociavel?gclid=CjwKCAjw4JWZBhApEiwAtJUN0NZo1R0Jb0KTlxwj6Jd9MOh98dlFAvEfV2C-izHuKLwKhrkRwZA-jBoC6bsQAvD_BwE">Observatório
+							de Educação - Educação Inclusiva: Desafios</a></li>
+				</ul>
+			</div>
+			<div class="col-6 col-md">
+				<a class="py-2 " aria-label="Product"> <a
+					href="http:https://www.facebook.com/"><img
+						style="height: 40px;" th:src="@{/css/imagens/faceicon.png}"
+						alt="Icon facebook "></a> <a href="https://www.instagram.com/"><img
+						style="height: 50px;" th:src="@{/css/imagens/instaicon.png}"
+						alt="Icon Instagram "></a> <a href="https://twitter.com/"><img
+						style="height: 40px;" th:src="@{/css/imagens/twitte-icon-1.jpg}"
+						alt="Icon twitter "></a>
+				</a>
+			</div>
+		</div>
+	</footer>
+
+	<!------------------------------------------------------------FIM RODAPÉ--------------------------------------------------------------->
+	<script
+		src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+		crossorigin="anonymous"></script>
+
+	<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+	<script>
+		new window.VLibras.Widget('https://vlibras.gov.br/app');
+	</script>
+</body>
+
+</html>
