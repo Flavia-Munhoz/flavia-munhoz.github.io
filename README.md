@@ -17,6 +17,8 @@ link https://recodepro.org.br
 - 5% Ensino superior completo.
 
  O diversas é uma plataforma de compartilhamento de conhecimento e experiência sobre inclusão de estudantes com deficiência no sistema de ensino. O mesmo aplica-se também aos educadores, gestores escolares, público, familiares e outros profisssionais interessados na educação inclusiva.
+ 
+<img src="https://user-images.githubusercontent.com/104622435/207639322-6475f162-d2d2-4f5e-bad2-40b890f2cd84.png" />
 
 
 # Autores 
